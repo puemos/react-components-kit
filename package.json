@@ -4,7 +4,8 @@
     "description": "A React component library boilerplate",
     "main": "./src/index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "build": "babel src -d lib"
     },
     "repository": {
         "type": "git",
@@ -28,5 +29,8 @@
     "peerDependencies": {
         "react": "^15.3.0 || ^16.0.0",
         "react-dom": "^15.3.0 || ^16.0.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0"
     }
 }
