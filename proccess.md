@@ -37,3 +37,5 @@ About to write to /Users/shyalter/Code/puemos/my-uikit/package.json:
 - add react peerDeps
 - npm install --save-dev babel-cli
 - add build script
+- created src structure
+- add babel react
