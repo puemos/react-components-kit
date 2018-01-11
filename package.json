@@ -1,28 +1,32 @@
 {
-  "name": "react-components-kit",
-  "version": "0.0.1",
-  "description": "A React component library boilerplate",
-  "main": "./src/index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/puemos/react-components-kit.git"
-  },
-  "keywords": [
-    "react",
-    "react-component",
-    "components",
-    "uikit",
-    "ui",
-    "generator",
-    "boilerplate"
-  ],
-  "author": "Shy Alter",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/puemos/react-components-kit/issues"
-  },
-  "homepage": "https://github.com/puemos/react-components-kit#readme"
+    "name": "react-components-kit",
+    "version": "0.0.1",
+    "description": "A React component library boilerplate",
+    "main": "./src/index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/puemos/react-components-kit.git"
+    },
+    "keywords": [
+        "react",
+        "react-component",
+        "components",
+        "uikit",
+        "ui",
+        "generator",
+        "boilerplate"
+    ],
+    "author": "Shy Alter",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/puemos/react-components-kit/issues"
+    },
+    "homepage": "https://github.com/puemos/react-components-kit#readme",
+    "peerDependencies": {
+        "react": "^15.3.0 || ^16.0.0",
+        "react-dom": "^15.3.0 || ^16.0.0"
+    }
 }
