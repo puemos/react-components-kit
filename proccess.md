@@ -39,3 +39,4 @@ About to write to /Users/shyalter/Code/puemos/my-uikit/package.json:
 - add build script
 - created src structure
 - add babel react
+- add storybook

@@ -1,16 +1,13 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export default class Example extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
+    static propTypes = {
+        message: PropTypes.string
+    };
 
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+    render() {
+        const { message } = this.props;
+        return <div>{message}</div>;
+    }
 }
