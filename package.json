@@ -1,7 +1,7 @@
 {
-    "name": "react-components-kit",
+    "name": "@igenius_dev/webapp-design",
     "version": "0.0.1",
-    "description": "A React component library boilerplate",
+    "description": "A React component library for crystal webapp",
     "main": "./lib",
     "module": "./src/components",
     "scripts": {
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/puemos/react-components-kit.git"
+        "url": "git@git.igenius.net:crystal/front-end/webapp-design.git"
     },
     "keywords": [
         "react",
@@ -27,9 +27,9 @@
     "author": "Shy Alter",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/puemos/react-components-kit/issues"
+        "url": "https://git.igenius.net/crystal/front-end/webapp-design/issues"
     },
-    "homepage": "https://github.com/puemos/react-components-kit#readme",
+    "homepage": "https://git.igenius.net/crystal/front-end/webapp-design#README.md",
     "peerDependencies": {
         "react": "^15.3.0 || ^16.0.0",
         "react-dom": "^15.3.0 || ^16.0.0"
@@ -54,6 +54,7 @@
         "gulp": "^3.9.1",
         "gulp-babel": "^7.0.0",
         "gulp-postcss": "^7.0.1",
+        "identity-obj-proxy": "^3.0.0",
         "jest": "^22.0.5",
         "node-sass": "^4.7.2",
         "postcss-apply": "^0.8.0",
@@ -71,14 +72,11 @@
         "sass-loader": "^6.0.6"
     },
     "jest": {
-        "moduleDirectories": [
-            "node_modules"
-        ],
-        "modulePaths": [
-            "<rootDir>/components"
-        ],
-        "setupFiles": [
-            "./jest.setup.js"
-        ]
+        "moduleNameMapper": {
+            "\\.(css|scss)$": "identity-obj-proxy"
+        },
+        "moduleDirectories": ["node_modules"],
+        "modulePaths": ["<rootDir>/components"],
+        "setupFiles": ["./jest.setup.js"]
     }
 }

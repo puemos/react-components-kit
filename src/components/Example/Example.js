@@ -6,9 +6,12 @@ export default class Example extends Component {
   static propTypes = {
     message: PropTypes.string
   };
+  static defaultProps = {
+    message: "Hello world, React is awesome !!!"
+  };
 
   render() {
     const { message } = this.props;
-    return <div className={style.Example}>{message}</div>;
+    return <span className={style.Example}>{message}</span>;
   }
 }
