@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
+import style from "./Example.css";
 export default class Example extends Component {
   static propTypes = {
     message: PropTypes.string
@@ -8,6 +8,6 @@ export default class Example extends Component {
 
   render() {
     const { message } = this.props;
-    return <div>{message}</div>;
+    return <div className={style.Example}>{message}</div>;
   }
 }
