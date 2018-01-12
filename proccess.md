@@ -40,7 +40,3 @@ About to write to /Users/shyalter/Code/puemos/my-uikit/package.json:
 - created src structure
 - add babel react
 - add storybook
-- add jest
-- add gulp
-- add css modules
-- add custom webpack to storybook

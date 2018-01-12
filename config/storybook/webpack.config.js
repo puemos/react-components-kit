@@ -1,16 +1,31 @@
+const path = require("path");
+
 module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           {
             loader: "style-loader"
           },
           {
             loader: "css-loader",
+            query: {
+              import: true,
+              importLoaders: 1,
+              localIdentName: "[name]__[local]___[hash:base64:5]",
+              modules: true,
+              sourceMap: true
+            }
+          },
+          { loader: "sass-loader" },
+          {
+            loader: "postcss-loader",
             options: {
-              modules: true
+              config: {
+                path: path.join(__dirname, "./postcss.config.js")
+              }
             }
           }
         ]

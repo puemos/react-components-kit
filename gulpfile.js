@@ -1,7 +1,6 @@
 const path = require("path");
 const gulp = require("gulp");
 const babel = require("gulp-babel");
-const postcss = require("gulp-postcss");
 
 gulp.task("js", function() {
   return gulp
@@ -17,25 +16,10 @@ gulp.task("js", function() {
     .pipe(gulp.dest("./lib"));
 });
 
-gulp.task("css", function() {
-  const plugins = [
-    require("autoprefixer"),
-    require("cssnano"),
-    require("postcss-import")({
-      root: __dirname,
-      path: [path.join(__dirname, "./src/components")]
-    }),
-    require("postcss-mixins")(),
-    require("postcss-each")(),
-    require("postcss-apply")(),
-    require("postcss-nesting")(),
-    require("postcss-reporter")({ clearMessages: true })
-  ];
-
+gulp.task("scss", function() {
   return gulp
-    .src(["./src/components/*.css", "./src/components/**/*.css"])
-    .pipe(postcss(plugins))
+    .src(["./src/**/*.scss", "./src/**/**/*.scss"])
     .pipe(gulp.dest("./lib"));
 });
 
-gulp.task("default", ["js", "css"]);
+gulp.task("default", ["js", "scss"]);
